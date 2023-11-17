@@ -8,5 +8,10 @@
 - repositories package
     - @Repository annotation
     - `extends JpaRepository<Task, Long>` , because id is a long
-
-
+- services package
+    - @Service annotation
+    - injecting the repository into service with @Autowired
+    - Optional wrapper class
+    - Basic CRUD repository methods
+- controllers package
+    -

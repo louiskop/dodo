@@ -19,12 +19,13 @@ public class Task implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
     private String name;
     private String description;
     private Boolean isComplete;
     private Instant createdAt;
+    private Instant updatedAt;
     private Instant dueDate;
 
     @Override
