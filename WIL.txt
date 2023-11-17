@@ -1,0 +1,7 @@
+- models package
+    - JPA @entity annotation
+    - @Table annotation
+    - Lombok @Getters and @Setters
+    - models implement Serializable
+    - @Id annotation generated with @GeneratedValue
+    - @Override the toString() method when implementing Serializable
