@@ -5,3 +5,8 @@
     - models implement Serializable
     - @Id annotation generated with @GeneratedValue
     - @Override the toString() method when implementing Serializable
+- repositories package
+    - @Repository annotation
+    - `extends JpaRepository<Task, Long>` , because id is a long
+
+
