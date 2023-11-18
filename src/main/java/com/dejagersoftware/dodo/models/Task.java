@@ -23,14 +23,12 @@ public class Task implements Serializable {
 
     private String name;
     private String description;
-    private Boolean isComplete;
     private Instant createdAt;
     private Instant updatedAt;
-    private Instant dueDate;
 
     @Override
     public String toString() {
-        return String.format("TODO:%s, isComplete: %s", name, isComplete);
+        return String.format("TODO:%s, isComplete: %s", name);
     }
 
 }

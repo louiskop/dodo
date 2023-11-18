@@ -21,6 +21,7 @@
     - ModelAndView object from spring ui
     - Pass ModelAndView to template
     - Query parameters with @PathVariable annotation
+    - orElseThrow on Optional objects
 - templates
     - dynamic data with thymeleaf
     - posting to an endpoint with thymeleaf
