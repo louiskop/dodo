@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            blue: "#1fb6ff",
+                            purple: "#7e5bef",
+                            pink: "#ff49db",
+                            orange: "#ff7849",
+                            green: "#13ce66",
+                            yellow: "#ffc82c",
+                            "gray-dark": "#273444",
+                            gray: "#8492a6",
+                            "gray-light": "#d3dce6",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body>
+        <div
+            class="h-screen w-screen flex flex-col items-center justify-center"
+        >
+            <button class="text-3xl bg-blue"><a href="/">Back</a></button>
+            <h2 class="text-3xl">Add here</h2>
+            <form
+                action="#"
+                th:action="@{/task}"
+                th:object="${task}"
+                method="POST"
+                class="flex flex-col justify-start gap-8 items-start"
+            >
+                <input th:field="*{name}" id="name" placeholder="task name" />
+                <input
+                    th:field="*{description}"
+                    id="description"
+                    placeholder="task description"
+                />
+                <button type="submit bg-green">Add</button>
+            </form>
+        </div>
+    </body>
+</html>
