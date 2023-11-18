@@ -2,6 +2,9 @@
 
 A Simple Todo CRUD application built with Spring, Thymeleaf templating and h2 local database
 
+![dodo](https://github.com/louiskop/dodo/assets/35295041/0d35d97e-5543-4648-a4c5-14bf08feb6f7)
+
+
 ### What I learned
 
 ---
